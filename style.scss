@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Karma&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Karma', serif;
+}
+
+// Style for header
+header{
+    display: flex;
+    justify-content: space-around;
+
+    .hamburger{
+        display: none;
+    }
+
+    ul{
+        display: flex;
+        list-style: none;
+
+        li{
+            padding: 3px;
+            margin: 10px;
+            color:hsl(216, 30%, 68%);
+            cursor: pointer;
+
+            &:hover{
+                border: 3px solid hsl(273, 4%, 51%);
+                color:hsl(270, 9%, 17%);
+                transition: .3s ease-out;
+            }
+        }
+    }
+}
+
+
+// For the first section humanizing
+.humanizing{
+
+    &__all{
+    display: flex;
+    flex-direction: row-reverse;
+    color: white;
+    background: hsl(256, 26%, 20%);
+
+    &--image{
+        margin-right: 7%;
+
+        img{
+            width: 400px;
+            height: 500px;
+            position: relative;
+            top: 5em;
+        }
+    }
+
+    &--title{
+        width: 80%;
+        margin: 0 7%;
+
+        h1{
+            font-size: 4em;
+        }
+    }
+
+}
+
+    button{
+        padding: 5px 10px;
+        border: 3px solid white;
+        color: white;
+        background: hsl(256, 26%, 20%);
+        cursor: pointer;
+    }
+
+    .topImage{
+        position: absolute;
+        top: 50%;
+
+        img{
+            width: 150px;
+        }
+    }
+
+    .bottomImage{
+        position: absolute;
+        left: 80%;
+        top: -2%;
+
+        img{
+        width: 300px;
+        }
+    }
+}
+
+// For the second section different
+.different{
+    position: absolute;
+    top: 120%;
+    margin: 0 7%;
+
+    h1{
+        font-size: 2em;
+        margin-left: 3%;
+    }
+
+    &__all{
+        display: flex;
+
+        div{
+            margin: 3%;
+
+            p{
+                color: #999;
+            }
+        }
+    }
+
+    hr{
+        width: 10%;
+        position: absolute;
+        left: 5%;
+        color: #ccc;
+    }
+
+    &__find{
+        display: flex;
+        justify-content: space-between;
+        background: hsl(256, 26%, 20%) url('images/bg-pattern-how-we-work-desktop.svg') no-repeat right;
+        color: white;
+        margin: 3%;
+
+        h2{
+            font-size: 3em;
+            margin-left: 3%;
+        }
+
+        button{
+            height: 50px;
+            width: 200px;
+            margin: auto;
+            cursor: pointer;
+            padding: 5px 10px;
+            border: 1px solid white;
+            color: white;
+            background: hsl(256, 26%, 20%);
+        }
+    }
+}
+
+// For the footer
+footer{
+    position: absolute;
+    top: 260%;
+    background: #eee url('images/bg-pattern-footer-desktop.svg') no-repeat left;
+    width: 100%;
+
+    .mediaSocial{
+        display: flex;
+        justify-content: space-between;
+        margin: 1.5em 7%;
+
+        i{
+            padding: 1em;
+            cursor: pointer;
+
+            &:hover{
+                transform: scale(1.5);
+            }
+        }
+
+        .fa-facebook-f:hover{
+            color: blue;
+        }
+
+        .fa-twitter:hover{
+            color: #1DA1F2;
+        }
+
+        .fa-pinterest:hover{
+            color: #E60023;
+        }
+
+        .fa-instagram:hover{
+            color: #F56040;
+        }
+    }
+
+    .detail{
+        display: flex;
+        justify-content: space-between;
+        margin: 1em 7% 4em 7%;
+
+        ul{
+            list-style: none;
+
+            li{
+                padding: 0.3em;
+                font-weight: 600;
+                font-size: 0.8em;
+                cursor: pointer;
+
+
+                a{
+                    text-decoration: none;
+                    color: rgba(0,0,0,0.6);
+                }
+            }
+
+        }
+
+    }
+}
+/* ---------------------------------*/
+@media screen and (max-width : 1025px){
+    .humanizing{
+
+        .bottomImage{
+            position: absolute;
+            left: 80%;
+            top: -2%;
+    
+            img{
+               width: 200px;
+            }
+    }
+
+}
+}
+
+/* -------------------------------*/
+@media screen and (max-width : 780px) {
+    // Style for header
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0 2em 0;
+
+    .hamburger{
+        display: block;
+        transition: .3s ease-in-out;
+        cursor: pointer;
+    }
+
+    ul{
+        display: none;
+        list-style: none;
+    }
+}
+
+.humanizing{
+    margin-top: 4em;
+
+    &__all{
+    display: block;
+
+    &--image{
+        margin: 0;
+        position: relative;
+        top: -5em;
+
+        img{
+            width: 100%;
+            height: 80vh;
+        }
+    }
+
+    &--title{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+
+        h1{
+            font-size: 3em;
+        }
+    }
+}
+
+    .topImage{
+        position: absolute;
+        top: 50%;
+
+        img{
+            width: 50px;
+        }
+    }
+
+    .bottomImage{
+        position: absolute;
+        left: 0%;
+        top: 0%;
+
+        img{
+           width: 0px;
+        }
+    }
+
+    button{
+        margin: 1em;
+    }
+
+}
+
+.different{
+    position: absolute;
+    top: 190%;
+    margin: 0 7%;
+    text-align: center;
+
+    h1{
+        font-size: 2em;
+        margin-left: 3%;
+    }
+
+    &__all{
+        display: block;
+        width: 90%;
+        margin: auto;
+
+        div{
+
+            p{
+                color: #999;
+            }
+        }
+    }
+
+    hr{
+        width: 10%;
+        position: absolute;
+        left: 5%;
+        color: #ccc;
+    }
+
+    &__find{
+        display: block;
+        height: 50vh;
+
+        h2{
+            font-size: 2em;
+            margin-left: 3%;
+            margin: 10%;
+        }
+
+        button{
+            height: 50px;
+            width: 200px;
+            margin: auto;
+            cursor: pointer;
+            padding: 5px 10px;
+            border: 1px solid white;
+            color: white;
+            background: hsl(256, 26%, 20%);
+            margin: 10%;
+        }
+    }
+}
+
+footer{
+    position: absolute;
+    top: 410%;
+
+    .mediaSocial{
+        display: block;
+        text-align: center;
+    }
+
+    .detail{
+        display: block;
+        margin: 2em;
+        text-align: center;
+    }
+}
+
+}
+
+
+// style for JavaScript
+.liste{
+    display: block;
+    position: relative;
+    top: 2em;
+    left: -7em;
+    transition: .3s ease-in-out;
+}
+
+.hambur{
+    position: relative;
+    left: 11em;
+}
+
+.differentMove{
+    position: absolute;
+    top: 215%;
+    margin: 0 7%;
+} 
+
+.footerMove{
+    position: absolute;
+    top: 440%;
+}    
+
+.humanizingMargin{
+    margin-top: 5em;
+}

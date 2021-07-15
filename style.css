@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&family=Karma&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Karma', serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .hamburger {
+  display: none;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+header ul li {
+  padding: 3px;
+  margin: 10px;
+  color: #95a9c6;
+  cursor: pointer;
+}
+
+header ul li:hover {
+  border: 3px solid #837d87;
+  color: #2b272f;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+}
+
+.humanizing__all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  color: white;
+  background: #2d2640;
+}
+
+.humanizing__all--image {
+  margin-right: 7%;
+}
+
+.humanizing__all--image img {
+  width: 400px;
+  height: 500px;
+  position: relative;
+  top: 5em;
+}
+
+.humanizing__all--title {
+  width: 80%;
+  margin: 0 7%;
+}
+
+.humanizing__all--title h1 {
+  font-size: 4em;
+}
+
+.humanizing button {
+  padding: 5px 10px;
+  border: 3px solid white;
+  color: white;
+  background: #2d2640;
+  cursor: pointer;
+}
+
+.humanizing .topImage {
+  position: absolute;
+  top: 50%;
+}
+
+.humanizing .topImage img {
+  width: 150px;
+}
+
+.humanizing .bottomImage {
+  position: absolute;
+  left: 80%;
+  top: -2%;
+}
+
+.humanizing .bottomImage img {
+  width: 300px;
+}
+
+.different {
+  position: absolute;
+  top: 120%;
+  margin: 0 7%;
+}
+
+.different h1 {
+  font-size: 2em;
+  margin-left: 3%;
+}
+
+.different__all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.different__all div {
+  margin: 3%;
+}
+
+.different__all div p {
+  color: #999;
+}
+
+.different hr {
+  width: 10%;
+  position: absolute;
+  left: 5%;
+  color: #ccc;
+}
+
+.different__find {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #2d2640 url("images/bg-pattern-how-we-work-desktop.svg") no-repeat right;
+  color: white;
+  margin: 3%;
+}
+
+.different__find h2 {
+  font-size: 3em;
+  margin-left: 3%;
+}
+
+.different__find button {
+  height: 50px;
+  width: 200px;
+  margin: auto;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid white;
+  color: white;
+  background: #2d2640;
+}
+
+footer {
+  position: absolute;
+  top: 260%;
+  background: #eee url("images/bg-pattern-footer-desktop.svg") no-repeat left;
+  width: 100%;
+}
+
+footer .mediaSocial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1.5em 7%;
+}
+
+footer .mediaSocial i {
+  padding: 1em;
+  cursor: pointer;
+}
+
+footer .mediaSocial i:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+footer .mediaSocial .fa-facebook-f:hover {
+  color: blue;
+}
+
+footer .mediaSocial .fa-twitter:hover {
+  color: #1DA1F2;
+}
+
+footer .mediaSocial .fa-pinterest:hover {
+  color: #E60023;
+}
+
+footer .mediaSocial .fa-instagram:hover {
+  color: #F56040;
+}
+
+footer .detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1em 7% 4em 7%;
+}
+
+footer .detail ul {
+  list-style: none;
+}
+
+footer .detail ul li {
+  padding: 0.3em;
+  font-weight: 600;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+footer .detail ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* ---------------------------------*/
+@media screen and (max-width: 1025px) {
+  .humanizing .bottomImage {
+    position: absolute;
+    left: 80%;
+    top: -2%;
+  }
+  .humanizing .bottomImage img {
+    width: 200px;
+  }
+}
+
+/* -------------------------------*/
+@media screen and (max-width: 780px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 1em 0 2em 0;
+  }
+  header .hamburger {
+    display: block;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+  }
+  header ul {
+    display: none;
+    list-style: none;
+  }
+  .humanizing {
+    margin-top: 4em;
+  }
+  .humanizing__all {
+    display: block;
+  }
+  .humanizing__all--image {
+    margin: 0;
+    position: relative;
+    top: -5em;
+  }
+  .humanizing__all--image img {
+    width: 100%;
+    height: 80vh;
+  }
+  .humanizing__all--title {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  .humanizing__all--title h1 {
+    font-size: 3em;
+  }
+  .humanizing .topImage {
+    position: absolute;
+    top: 50%;
+  }
+  .humanizing .topImage img {
+    width: 50px;
+  }
+  .humanizing .bottomImage {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+  }
+  .humanizing .bottomImage img {
+    width: 0px;
+  }
+  .humanizing button {
+    margin: 1em;
+  }
+  .different {
+    position: absolute;
+    top: 190%;
+    margin: 0 7%;
+    text-align: center;
+  }
+  .different h1 {
+    font-size: 2em;
+    margin-left: 3%;
+  }
+  .different__all {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+  .different__all div p {
+    color: #999;
+  }
+  .different hr {
+    width: 10%;
+    position: absolute;
+    left: 5%;
+    color: #ccc;
+  }
+  .different__find {
+    display: block;
+    height: 50vh;
+  }
+  .different__find h2 {
+    font-size: 2em;
+    margin-left: 3%;
+    margin: 10%;
+  }
+  .different__find button {
+    height: 50px;
+    width: 200px;
+    margin: auto;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid white;
+    color: white;
+    background: #2d2640;
+    margin: 10%;
+  }
+  footer {
+    position: absolute;
+    top: 410%;
+  }
+  footer .mediaSocial {
+    display: block;
+    text-align: center;
+  }
+  footer .detail {
+    display: block;
+    margin: 2em;
+    text-align: center;
+  }
+}
+
+.liste {
+  display: block;
+  position: relative;
+  top: 2em;
+  left: -7em;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.hambur {
+  position: relative;
+  left: 11em;
+}
+
+.differentMove {
+  position: absolute;
+  top: 215%;
+  margin: 0 7%;
+}
+
+.footerMove {
+  position: absolute;
+  top: 440%;
+}
+
+.humanizingMargin {
+  margin-top: 5em;
+}
+/*# sourceMappingURL=style.css.map */
