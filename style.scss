@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla&family=Karma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
 body{
     padding: 0;
     margin: 0;
-    font-family: 'Karma', serif;
+    font-family: 'DM Serif Display', serif;
 }
 
 // Style for header
@@ -86,7 +86,7 @@ header{
     .bottomImage{
         position: absolute;
         left: 80%;
-        top: -2%;
+        top: 12%;
 
         img{
         width: 300px;
@@ -97,7 +97,7 @@ header{
 // For the second section different
 .different{
     position: absolute;
-    top: 120%;
+    top: 100%;
     margin: 0 7%;
 
     h1{
@@ -152,7 +152,7 @@ header{
 // For the footer
 footer{
     position: absolute;
-    top: 260%;
+    top: 210%;
     background: #eee url('images/bg-pattern-footer-desktop.svg') no-repeat left;
     width: 100%;
 
@@ -227,6 +227,20 @@ footer{
     }
 
 }
+}
+
+/* ----------------------------------*/
+@media screen and (max-width : 1440px){
+    .different{
+        position: absolute;
+        top: 120%;
+        margin: 0 7%;
+    }
+
+    footer{
+        position: absolute;
+        top: 250%;
+    }
 }
 
 /* -------------------------------*/
@@ -381,7 +395,7 @@ footer{
     display: block;
     position: relative;
     top: 2em;
-    left: -7em;
+    left: -6em;
     transition: .3s ease-in-out;
 }
 
@@ -402,5 +416,5 @@ footer{
 }    
 
 .humanizingMargin{
-    margin-top: 5em;
+    margin-top: 5.5em;
 }
